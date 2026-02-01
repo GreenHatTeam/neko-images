@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-key="pageTitle"></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="info-panel">
+                <div class="info-item">
+                    <div class="info-label" data-key="artistName"></div>
+                    <div id="artist-name" class="info-value">...</div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-label" data-key="artistLink"></div>
+                    <div id="artist-link" class="info-value"></div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-label" data-key="imageSource"></div>
+                    <div id="source-link" class="info-value"></div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-label" data-key="apiStatus"></div>
+                    <div id="api-status" class="info-value"></div>
+                </div>
+                
+                <div class="button-container">
+                    <button id="fetch-button" class="fetch-button" data-key="fetchButton"></button>
+                    <div id="loading" class="loading"></div>
+                </div>
+            </div>
+            
+            <div class="image-panel">
+                <div class="image-container">
+                    <div id="image-placeholder" class="placeholder">...</div>
+                    <img id="cat-image" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p data-key="footerText"></p>
+        </footer>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
